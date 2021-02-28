@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+/* RESET */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* CENTERING */
+main {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+/* FONT */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* SPACING */
+main {
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+/* COLOR */
+body {
+  color: #566b78;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+a {
+  color: rgb(52, 56, 110);
+}
+
+/* HEADER */
+
+header {
+  background-color: #263d36;
+  background-image: url("https://images.unsplash.com/photo-1555347873-e5410faa3d10?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: right;
+}
+
+header h1 {
+  color: rgb(59, 59, 59);
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+header a {
+  border: 1px solid rgb(52, 56, 110);
+  border-radius: 2em;
+  color: rgb(52, 56, 110);
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition-property: color, background;
+  transition-duration: 200ms;
+}
+
+header a:hover {
+  background: white;
+  color: rgb(52, 56, 110);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  font-family: "Montserrat", sans-serif;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
